@@ -13,7 +13,7 @@ class Estudiante
 
     public:
         void setCodigo(int);
-        int getCodigo();}
+        int getCodigo();
         void setNombre(string);
         string getNombre();
         void setIngreso(int);
@@ -35,7 +35,7 @@ class PilaEstatica
 
 Estudiante::Estudiante()
 {
-    //ctor
+    Estudiante pE[100];
 }
 
 void Estudiante::setCodigo(int _codigo)
