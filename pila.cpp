@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 //CLASES
 class Estudiante
 {
@@ -28,6 +30,60 @@ class PilaEstatica
     public:
         PilaEstatica();
 };
+
+//SET & GET estudiante.cpp
+
+Estudiante::Estudiante()
+{
+    //ctor
+}
+
+void Estudiante::setCodigo(int _codigo)
+{
+    codigo = _codigo;
+}
+
+int Estudiante::getCodigo()
+{
+    return codigo;
+}
+
+void Estudiante::setNombre(string _nombre)
+{
+    nombre = _nombre;
+}
+
+string Estudiante::getNombre()
+{
+    return nombre;
+}
+
+void Estudiante::setIngreso(int _ingreso)
+{
+    ingreso = _ingreso;
+}
+
+int Estudiante::getIngreso()
+{
+    return ingreso;
+}
+
+void Estudiante::setEgresado(bool _egresado)
+{
+    egresado = _egresado;
+}
+
+bool Estudiante::getEgresado()
+{
+    return egresado;
+}
+
+//listaestatica.cpp
+PilaEstatica::PilaEstatica()
+{
+    cont = 0;
+}
+
 
 //MAIN.CPP
 
