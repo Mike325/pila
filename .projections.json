@@ -1,0 +1,24 @@
+{
+  "src/*.cpp" : {
+    "type": "Source",
+    "alternate": "include/{}.hpp"
+  },
+  "include/*.hpp" : {
+    "type": "Include",
+    "alternate": "src/{}.cpp"
+  },
+  "*.cpp" : {
+    "make": "make",
+    "path": [
+      "src/",
+      "include/"
+    ]
+  },
+  "*.hpp" : {
+    "make": "make",
+    "path": [
+      "src/",
+      "include/"
+    ]
+  }
+}
